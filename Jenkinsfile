@@ -27,12 +27,6 @@ pipeline {
         }
 
         stage("Publish APK To Artifactory") {
-            when {
-                anyOf {
-                    branch "main"
-                    branch "master"
-                }
-            }
             steps {
                 withCredentials([string(credentialsId: "artifactory-token", variable: "ARTIFACTORY_TOKEN")]) {
                     sh '''
