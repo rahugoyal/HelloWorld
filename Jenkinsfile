@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ARTIFACTORY_URL = "http://host.docker.internal:8082/artifactory"
+        ARTIFACTORY_URL = "http://localhost:8082/artifactory"
         ARTIFACTORY_REPO = "example-repo-local"
         APK_PATH = "app/build/outputs/apk/debug/app-debug.apk"
     }
