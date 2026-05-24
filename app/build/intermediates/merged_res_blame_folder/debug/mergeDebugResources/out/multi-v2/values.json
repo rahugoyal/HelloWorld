@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.hellocicd.app-mergeDebugResources-1:/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/rahul/Documents/Codex/2026-05-24/hello-world/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "226"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "265"
+                    }
+                }
+            ]
+        }
+    ]
+}

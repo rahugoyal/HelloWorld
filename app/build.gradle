@@ -1,5 +1,7 @@
 plugins {
     id "com.android.application"
+    id "org.sonarqube"
+
 }
 
 android {
@@ -14,7 +16,15 @@ android {
         versionName "1.0.0"
     }
 }
-
+sonar {
+    properties {
+        property "sonar.projectKey", "HelloCICD"
+        property "sonar.projectName", "HelloCICD"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.sources", "src/main/java"
+        property "sonar.java.binaries", "build/intermediates/javac/debug/classes"
+    }
+}
 tasks.register("printVersionName") {
     doLast {
         println android.defaultConfig.versionName

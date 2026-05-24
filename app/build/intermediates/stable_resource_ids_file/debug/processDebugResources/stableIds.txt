@@ -1,0 +1,1 @@
+com.example.hellocicd:style/AppTheme = 0x7f010000

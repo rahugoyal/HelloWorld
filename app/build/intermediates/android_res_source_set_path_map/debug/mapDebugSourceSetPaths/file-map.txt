@@ -1,0 +1,7 @@
+com.example.hellocicd.app-pngs-0 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/generated/res/pngs/debug
+com.example.hellocicd.app-updated_navigation_xml-1 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/generated/updated_navigation_xml/debug
+com.example.hellocicd.app-packageDebugResources-2 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.hellocicd.app-packageDebugResources-3 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.hellocicd.app-debug-4 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.example.hellocicd.app-debug-5 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/src/debug/res
+com.example.hellocicd.app-main-6 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/src/main/res

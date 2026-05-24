@@ -1,0 +1,4 @@
+#Sun May 24 17:32:56 IST 2026
+base.0=/Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

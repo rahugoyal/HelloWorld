@@ -1,0 +1,4 @@
+com.example.hellocicd.test.app-updated_navigation_xml-0 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/generated/updated_navigation_xml/debugAndroidTest
+com.example.hellocicd.test.app-packageDebugAndroidTestResources-1 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/intermediates/incremental/debugAndroidTest/packageDebugAndroidTestResources/merged.dir
+com.example.hellocicd.test.app-packageDebugAndroidTestResources-2 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/intermediates/incremental/debugAndroidTest/packageDebugAndroidTestResources/stripped.dir
+com.example.hellocicd.test.app-debugAndroidTest-3 /Users/rahul/Documents/Codex/2026-05-24/hello-world/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
