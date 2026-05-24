@@ -5,7 +5,6 @@ pipeline {
         ARTIFACTORY_URL = "http://localhost:8082/artifactory"
         ARTIFACTORY_REPO = "example-repo-local"
         APK_PATH = "app/build/outputs/apk/debug/app-debug.apk"
-        SONAR_TOKEN = credentials("sonar-token")
     }
 
     stages {
@@ -24,7 +23,9 @@ pipeline {
         stage("SonarQube Analysis") {
             steps {
                 withSonarQubeEnv("SonarQube") {
-                    sh "./gradlew --no-daemon sonar -Dsonar.token=${SONAR_TOKEN}"
+                    withCredentials([string(credentialsId: "sonar-token", variable: "SONAR_AUTH_TOKEN")]) {
+                        sh "./gradlew --no-daemon sonar -Dsonar.token=${SONAR_AUTH_TOKEN}"
+                    }
                 }
             }
         }
