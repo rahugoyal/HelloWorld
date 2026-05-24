@@ -22,11 +22,7 @@ pipeline {
 
         stage("SonarQube Analysis") {
             steps {
-                withSonarQubeEnv("SonarQube") {
-                    withCredentials([string(credentialsId: "sonar-token", variable: "SONAR_AUTH_TOKEN")]) {
-                        sh "./gradlew --no-daemon sonar -Dsonar.token=${SONAR_AUTH_TOKEN}"
-                    }
-                }
+                sh "./gradlew --no-daemon sonar"
             }
         }
 

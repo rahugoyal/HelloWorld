@@ -21,6 +21,7 @@ sonar {
         property "sonar.projectKey", "HelloCICD"
         property "sonar.projectName", "HelloCICD"
         property "sonar.host.url", "http://localhost:9000"
+        property "sonar.token", "sqp_2a23932d37b05a55a2419ae2ac7990b36ee884e1"
         property "sonar.sources", "src/main/java"
         property "sonar.java.binaries", "build/intermediates/javac/debug/classes"
     }
