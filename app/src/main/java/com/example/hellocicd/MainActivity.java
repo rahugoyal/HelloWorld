@@ -11,6 +11,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         TextView greeting = new TextView(this);
+
         greeting.setText("Hello World  from Android CI/CD Radhe Radhe");
         greeting.setTextSize(24);
         greeting.setGravity(Gravity.CENTER);
