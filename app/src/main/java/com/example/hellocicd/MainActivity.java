@@ -9,7 +9,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-// test webhook trigger
+        // test webhook trigger
 
         TextView greeting = new TextView(this);
 
