@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
         TextView greeting = new TextView(this);
 
         // Use Greeting helper to make the text available to unit tests
-        greeting.setText(Greeting.getGreeting());
+        greeting.setText("hello");
         greeting.setTextSize(24);
         greeting.setGravity(Gravity.CENTER);
 
