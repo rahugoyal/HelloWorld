@@ -32,19 +32,19 @@ pipeline {
             }
         }
 
-        stage("Publish APK To Artifactory") {
-            steps {
-                withCredentials([string(credentialsId: "artifactory-token", variable: "ARTIFACTORY_TOKEN")]) {
-                    sh '''
-                        set -eu
-                        VERSION="1.0.0"
-                        TARGET="${ARTIFACTORY_URL}/${ARTIFACTORY_REPO}/android/hellocicd/${VERSION}/hellocicd-${VERSION}-${BUILD_NUMBER}.apk"
-                        curl -f -H "Authorization: Bearer ${ARTIFACTORY_TOKEN}" -T "${APK_PATH}" "${TARGET}"
-                        echo "Uploaded to ${TARGET}"
-                    '''
-                }
-            }
-        }
+//        stage("Publish APK To Artifactory") {
+//            steps {
+//                withCredentials([string(credentialsId: "artifactory-token", variable: "ARTIFACTORY_TOKEN")]) {
+//                    sh '''
+//                        set -eu
+//                        VERSION="1.0.0"
+//                        TARGET="${ARTIFACTORY_URL}/${ARTIFACTORY_REPO}/android/hellocicd/${VERSION}/hellocicd-${VERSION}-${BUILD_NUMBER}.apk"
+//                        curl -f -H "Authorization: Bearer ${ARTIFACTORY_TOKEN}" -T "${APK_PATH}" "${TARGET}"
+//                        echo "Uploaded to ${TARGET}"
+//                    '''
+//                }
+//            }
+//        }
 
         stage("Update Jira") {
             when {
