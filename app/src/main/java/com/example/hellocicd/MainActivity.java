@@ -9,11 +9,12 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // test webhook trigger --
+          // test webhook trigger --
 
         TextView greeting = new TextView(this);
 
-        greeting.setText("Hello World  from Android CI/CD Radhe Radhe");
+        // Use Greeting helper to make the text available to unit tests
+        greeting.setText(Greeting.getGreeting());
         greeting.setTextSize(24);
         greeting.setGravity(Gravity.CENTER);
 
