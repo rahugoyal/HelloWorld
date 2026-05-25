@@ -45,5 +45,28 @@ pipeline {
                 }
             }
         }
+
+        stage("Update Jira") {        // ← last
+            steps {
+                script {
+                    def branchName = env.GIT_BRANCH ?: "unknown"
+                    def ticketKey = (branchName =~ /SCRUM-\d+/)
+                    if (ticketKey) {
+                        jiraComment(
+                                site: "rahulgoyalsbl010.atlassian.net",
+                                idOrKey: ticketKey[0],
+                                body: "✅ Jenkins build #${BUILD_NUMBER} passed. APK uploaded to Artifactory."
+                        )
+                        jiraTransitionIssue(
+                                site: "rahulgoyalsbl010.atlassian.net",
+                                idOrKey: ticketKey[0],
+                                input: [transition: [name: "In Review"]]
+                        )
+                    } else {
+                        echo "No SCRUM ticket found in branch name: ${branchName}"
+                    }
+                }
+            }
+        }
     }
 }
