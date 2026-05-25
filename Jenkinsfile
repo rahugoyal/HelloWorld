@@ -46,7 +46,11 @@ pipeline {
             }
         }
 
-        stage("Update Jira") {        // ← last
+        stage("Update Jira") {
+            when {
+                expression { currentBuild.result == null || currentBuild.result == 'SUCCESS' }
+            }
+            // ← last
             steps {
                 script {
                     def branchName = env.GIT_BRANCH ?: "unknown"
